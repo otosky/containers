@@ -1,0 +1,7 @@
+---
+app: bandcamp-collection-downloader
+base: false
+channels:
+  - name: bandcamp-collection-downloader
+    platforms: ["linux/amd64", "linux/arm64"]
+    stable: false
