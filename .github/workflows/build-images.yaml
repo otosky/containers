@@ -2,7 +2,7 @@
 name: "Image Build"
 
 on:
-  workflow_call:
+  workflow_dispatch:
     inputs:
       appsToBuild:
         required: false
