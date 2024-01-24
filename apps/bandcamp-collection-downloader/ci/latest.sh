@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-echo "test"
+echo "0.0.1"

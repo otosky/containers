@@ -1,9 +1,10 @@
 ---
 app: bandcamp-collection-downloader
 base: false
+semantic_versioning: true
 channels:
   - name: stable
-    platforms: ["linux/amd64", "linux/arm64"]
-    stable: false
+    platforms: ["linux/amd64"]
+    stable: true
     tests:
       enabled: false
