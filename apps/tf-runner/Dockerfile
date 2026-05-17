@@ -8,4 +8,9 @@ RUN apk add --no-cache \
     libc6-compat \
     libstdc++
 
+COPY apps/tf-runner/entrypoint.sh /usr/local/bin/tf-runner-entrypoint
+RUN chmod +x /usr/local/bin/tf-runner-entrypoint
+
 USER 65532:65532
+
+ENTRYPOINT ["/sbin/tini", "--", "/usr/local/bin/tf-runner-entrypoint"]
